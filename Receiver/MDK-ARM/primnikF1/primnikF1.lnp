@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"primnikf1\startup_stm32f103xb.o"
+"primnikf1\nrf24l01.o"
+"primnikf1\main.o"
+"primnikf1\stm32f1xx_it.o"
+"primnikf1\stm32f1xx_hal_msp.o"
+"primnikf1\stm32f1xx_hal_gpio_ex.o"
+"primnikf1\stm32f1xx_hal_spi.o"
+"primnikf1\stm32f1xx_hal.o"
+"primnikf1\stm32f1xx_hal_rcc.o"
+"primnikf1\stm32f1xx_hal_rcc_ex.o"
+"primnikf1\stm32f1xx_hal_gpio.o"
+"primnikf1\stm32f1xx_hal_dma.o"
+"primnikf1\stm32f1xx_hal_cortex.o"
+"primnikf1\stm32f1xx_hal_pwr.o"
+"primnikf1\stm32f1xx_hal_flash.o"
+"primnikf1\stm32f1xx_hal_flash_ex.o"
+"primnikf1\stm32f1xx_hal_exti.o"
+"primnikf1\stm32f1xx_hal_tim.o"
+"primnikf1\stm32f1xx_hal_tim_ex.o"
+"primnikf1\stm32f1xx_hal_uart.o"
+"primnikf1\system_stm32f1xx.o"
+--strict --scatter "primnikF1\primnikF1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "primnikF1.map" -o primnikF1\primnikF1.axf
